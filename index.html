@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BROZ SHOP WEB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- data-aos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <style>
+    body {
+      background-color: #111315;
+    }
+      .navbar, 
+      .offcanvas {
+        background-color: #111315;
+      }
+      .navbar a, 
+      .offcanvas a {
+        color: white;
+      }
+      .nav-item i {
+        color: white;
+      }
+      .navbar-toggler, .bg-tnav {
+        background-color: #2A86FF;
+      }
+      .bg-tnav:hover, .navbar-toggler:hover {
+        background-color: #2A86FF;
+      }
+      .bg-awal {
+        background-image:url('./image/bg.jpeg');
+        background-size:cover;
+        background-repeat: no-repeat;
+      }
+      .login {
+       margin-left: 50px;
+     }
+     a {
+       text-decoration:none;
+     }
+     p {
+       font-size: 1.1rem;
+     }
+     .service {
+       width: 125px;
+       height: 125px;
+     }
+     html {
+            scroll-behavior: smooth;
+        }
+        #back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            display: none;
+            z-index: 99;
+        }
+        .produk-img {
+            overflow: hidden;
+        }
+        .produk-img img {
+            transition: transform 0.5s ease;
+        }
+        .produk-img:hover img {
+            transform: scale(1.1);
+        }
+        .produk-card {
+            overflow: hidden;
+        }
+        .produk-card .card {
+            transition: transform 0.5s ease;
+        }
+        .produk-card:hover .card {
+            transform: scale(1.1);
+        }
+      @media (max-width: 1000px){
+       .login {
+       margin-left: 1px;
+     }
+     .service {
+       width: 100px;
+       height: 100px;
+     }
+      }
+      
+    </style>
+  </head>
+  <body>
+  
+   <!-- navbar --> 
+   
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+     <a class="navbar-brand text-white fs-3" href="index.html">
+      <img src="image/brz.png" width="70" height="50">
+      Broz shop
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+         <a class="navbar-brand text-white fs-3" href="index.html">
+      <img src="image/brz.png" width="70" height="50">
+      Broz shop
+    </a>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#prodak">
+                Product
+              </a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link text-white" href="#testimonial">
+                Testimonial
+              </a>
+            </li>
+            <hr class="divider">
+            <li class="nav-item">
+            <a class="btn bg-tnav text-white login" href="login.html">
+              <i class="bi bi-box-arrow-right"></i>
+              Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav> 
+   
+  <!-- home -->
+  
+  <div class="container-fluid my-5 py-5" id="home">
+    <div class="container py-2">
+    <div class="p-5 mb-4 bg-awal rounded-3 text-white">
+      <div class="container-fluid py-5">
+        <h1 class="display-4 fw-bold" data-aos="fade-up">WELCOME TO<br> BORZ SHOP</h1>
+        <p class="col-md-8 fs-4" data-aos="fade-up">WE PROVIDE A VARIETY OF SPORTS EQUIPMENT.</p>
+        <button class="btn bg-tnav btn-lg text-white" type="button" data-aos="fade-up">Search here</button>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6 mb-4" data-aos="fade-up">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>A VARIETY OF QUALITY PRODUCTS<br> ARE AVAILABLE HERE</h2>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4" data-aos="fade-up">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>BEST PRODUCT<br> IN BORZ SHOP</h2>
+          <p>JUMPING ROPE </p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-body-secondary border-top">
+    </footer>
+  </div>
+  </div>
+  
+  <!-- prodak -->
+  
+  <div class="container-fluid my-5 py-5" id="prodak">
+    <h1 class="text-center text-white fw-bold display-6 my-5 pb-5 bebas-neue-regular" data-aos="fade-up">OUR PRODUCT</h1>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3">
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm text-bg-dark produk-img">
+            <img src="./image/1-1.jpg" class="img-fluid card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="card-body">
+              <h5 class="card-title display-6 bebas-neue-regular fw-bold text-center">Venum Kontact</h5>
+              <center>
+              <button type="submit" class="btn btn-primary btn-lg my-3" style=" width:80%;"><a href="detail.html" class="text-white link">lihat</a></button>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm text-bg-dark produk-img">
+            <img src="./image/2.jpg" class="img-fluid card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="card-body">
+              <h5 class="card-title display-6 bebas-neue-regular fw-bold text-center">Black Spartan </h5>
+              <center>
+              <button type="submit" class="btn btn-primary btn-lg my-3" style=" width:80%;"><a href="detail.html" class="text-white link">lihat</a></button>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm text-bg-dark produk-img">
+            <img src="./image/3.jpg"class="img-fluid card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="card-body">
+              <h5 class="card-title display-6 bebas-neue-regular fw-bold text-center">Reebok Combat</h5>
+              <center>
+              <button type="submit" class="btn btn-primary btn-lg my-3" style=" width:80%;"><a href="detail.html" class="text-white link">lihat</a></button>
+              </center>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm text-bg-dark produk-img">
+            <img src="./image/4.jpg" class="img-fluid card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="card-body">
+              <h5 class="card-title display-6 bebas-neue-regular fw-bold text-center">TouHev Bags</h5>
+              <center>
+              <button type="submit" class="btn btn-primary btn-lg my-3" style=" width:80%;"><a href="detail.html" class="text-white link">lihat</a></button>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm text-bg-dark produk-img">
+            <img src="./image/5.jpg" class="img-fluid card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="card-body">
+              <h5 class="card-title display-6 bebas-neue-regular fw-bold text-center">Pu Kickboxing</h5>
+              <center>
+              <button type="submit" class="btn btn-primary btn-lg my-3" style=" width:80%;"><a href="detail.html" class="text-white link">lihat</a></button>
+              </center>
+            </div>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+          <div class="card shadow-sm text-bg-dark produk-img">
+            <img src="./image/6-2.jpg" class="img-fluid card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div class="card-body">
+              <h5 class="card-title display-6 bebas-neue-regular fw-bold text-center">Rdx Headgear</h5>
+              <center>
+              <button type="submit" class="btn btn-primary btn-lg my-3" style=" width:80%;"><a href="detail.html" class="text-white link">lihat</a></button>
+              </center>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid my-5 py-5" >
+    <div class="container text-bg-dark rounded-3">
+        <div class="row">
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="img-box">
+              <img src="./image/brz.png" class="img-fluid pt-4" alt="">
+            </div>
+          </div>
+          <div class="col-md-6" data-aos="fade-up">
+            <div class="text-white pt-5">
+                <h2>
+                BE STRONG <br>
+               WITH QUALITY PRODUCT
+                </h2>
+              <p>
+               -BORZ SHOP-
+              </p>
+            </div>
+          </div>
+        </div>
+    </div>
+ </div>
+  
+  <!-- testimonial -->
+  
+  <div class="container-fluid py-5 my-5 bg-sidebar rounded-5" id="testimonial">
+  <div class="container">
+    <h1 class="text-center text-white fw-bold display-6 my-5 pb-5 bebas-neue-regular" data-aos="fade-up">TESNIMONIAL</h1>
+    
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      <div class="col-lg-4 mb-3 testimony-content produk-card" data-aos="fade-up">
+        <div class="card p-4 text-bg-dark">
+          <figure>
+  <figcaption class="blockquote-footer">
+    Toro
+  </figcaption>
+  <p>
+    "Very Quality Product"
+  </p>
+</figure>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3 testimony-content produk-card" data-aos="fade-up">
+        <div class="card p-4 text-bg-dark">
+          <figure>
+  <figcaption class="blockquote-footer">
+    Чимаев
+  </figcaption>
+  <p>
+    "Я действительно очень доволен качеством продукта"
+  </p>
+</figure>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3 testimony-content produk-card" data-aos="fade-up">
+        <div class="card p-4 text-bg-dark">
+          <figure>
+  <figcaption class="blockquote-footer">
+    Agus
+  </figcaption>
+  <p>
+    "Adik Aku Sangat Suka Dengan Barangnya"
+  </p>
+</figure>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3 testimony-content produk-card" data-aos="fade-up">
+        <div class="card p-4 text-bg-dark">
+          <figure>
+  <figcaption class="blockquote-footer">
+    علي
+  </figcaption>
+  <p>
+      "البضاعة جيدة، وأنا راض جدا"
+  </p>
+</figure>
+        </div>
+      </div>
+      
+      <div class="col-lg-4 mb-3 testimony-content produk-card" data-aos="fade-up">
+        <div class="card p-4 text-bg-dark">
+          <figure>
+  <figcaption class="blockquote-footer">
+    Sane5321
+  </figcaption>
+  <p>
+    "Very Satisfactory"
+  </p>
+</figure>
+        </div>
+      </div>
+      <div class="col-lg-4 mb-3 testimony-content produk-card" data-aos="fade-up">
+        <div class="card p-4 text-bg-dark">
+          <figure>
+  <figcaption class="blockquote-footer">
+    Subassu
+  </figcaption>
+  <p>
+    Lorem ipsum dolor sit amet.
+  </p>
+</figure>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+  <div class="container-fluid mt-5 py-5 text-bg-dark rounded-top">
+    <div class="social_container">
+      <div class="social_box">
+        <a href="https://instagram.com/_arga40?igshid=MzRlODBiNWFlZA==">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        <a href="https://youtube.com/@argaaez9976">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+    <div class="info_container text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <h4>
+              ABOUT US
+            </h4>
+            <p>
+            this shop was established in 2023, selling a variety of sports accessories.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="info_form ">
+              <h4>
+                Brands
+              </h4>
+               <p>
+                rush athletics<br>
+                Atletika<br>
+                Boxero<br>
+                Nike
+               </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h4>
+              NEED HELP
+            </h4>
+            <p>
+            buy and give your best review so that this shop can continue to develop.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h4>
+              CONTACT US
+            </h4>
+             <p>
+              +62 812-2517-2900<br>
+              dajah9314@gmail.com
+             </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+ <!-- footer section -->
+    
+ <footer class=" footer_section text-white border-top text-bg-dark">
+      <div class="container py-3">
+        <p class="text-center">
+          &copy; <span id="displayYear"></span> All Rights Reserved By
+          <a>Borz</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  
+  
+  <!-- Back to Top Button -->
+<button id="back-to-top" class="btn btn-primary" title="Go to top" data-aos="fade-left"><i class="fas fa-arrow-up"></i></button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    AOS.init();
+
+    // Show or hide the button
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        var backToTopButton = document.getElementById("back-to-top");
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    document.getElementById('back-to-top').addEventListener('click', function() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    });
+</script>
+
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
